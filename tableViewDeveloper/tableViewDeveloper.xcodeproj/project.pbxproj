@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F29B5327252239C200BDC2A8 /* developer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F29B5326252239C200BDC2A8 /* developer.jpg */; };
 		F2D195F1252219A1009D7B4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D195F0252219A1009D7B4C /* AppDelegate.swift */; };
 		F2D195F3252219A1009D7B4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D195F2252219A1009D7B4C /* SceneDelegate.swift */; };
 		F2D195F5252219A1009D7B4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D195F4252219A1009D7B4C /* ViewController.swift */; };
@@ -16,7 +17,7 @@
 		F2D19608252219A5009D7B4C /* tableViewDeveloperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D19607252219A5009D7B4C /* tableViewDeveloperTests.swift */; };
 		F2D19613252219A5009D7B4C /* tableViewDeveloperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D19612252219A5009D7B4C /* tableViewDeveloperUITests.swift */; };
 		F2D1962C25221BB1009D7B4C /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1962B25221BB1009D7B4C /* MyCustomCell.swift */; };
-		F2D19631252223A7009D7B4C /* developer.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D19630252223A6009D7B4C /* developer.png */; };
+		F2D1963625222FE3009D7B4C /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1963525222FE3009D7B4C /* Developer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F29B5326252239C200BDC2A8 /* developer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = developer.jpg; sourceTree = "<group>"; };
 		F2D195ED252219A1009D7B4C /* tableViewDeveloper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewDeveloper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D195F0252219A1009D7B4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D195F2252219A1009D7B4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		F2D19612252219A5009D7B4C /* tableViewDeveloperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewDeveloperUITests.swift; sourceTree = "<group>"; };
 		F2D19614252219A5009D7B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2D1962B25221BB1009D7B4C /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
-		F2D19630252223A6009D7B4C /* developer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = developer.png; sourceTree = "<group>"; };
+		F2D1963525222FE3009D7B4C /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +108,10 @@
 				F2D195F0252219A1009D7B4C /* AppDelegate.swift */,
 				F2D195F2252219A1009D7B4C /* SceneDelegate.swift */,
 				F2D195F4252219A1009D7B4C /* ViewController.swift */,
-				F2D19630252223A6009D7B4C /* developer.png */,
 				F2D195F6252219A1009D7B4C /* Main.storyboard */,
+				F29B5326252239C200BDC2A8 /* developer.jpg */,
 				F2D1962B25221BB1009D7B4C /* MyCustomCell.swift */,
+				F2D1963525222FE3009D7B4C /* Developer.swift */,
 				F2D195F9252219A5009D7B4C /* Assets.xcassets */,
 				F2D195FB252219A5009D7B4C /* LaunchScreen.storyboard */,
 				F2D195FE252219A5009D7B4C /* Info.plist */,
@@ -237,9 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29B5327252239C200BDC2A8 /* developer.jpg in Resources */,
 				F2D195FD252219A5009D7B4C /* LaunchScreen.storyboard in Resources */,
 				F2D195FA252219A5009D7B4C /* Assets.xcassets in Resources */,
-				F2D19631252223A7009D7B4C /* developer.png in Resources */,
 				F2D195F8252219A1009D7B4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D195F5252219A1009D7B4C /* ViewController.swift in Sources */,
+				F2D1963625222FE3009D7B4C /* Developer.swift in Sources */,
 				F2D195F1252219A1009D7B4C /* AppDelegate.swift in Sources */,
 				F2D1962C25221BB1009D7B4C /* MyCustomCell.swift in Sources */,
 				F2D195F3252219A1009D7B4C /* SceneDelegate.swift in Sources */,

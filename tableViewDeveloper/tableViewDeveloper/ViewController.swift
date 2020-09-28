@@ -11,14 +11,25 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableViewDeveloper: UITableView!
     
-    var arrayDeveloper = ["Grazielli","Mízia","Gilvã", "Narlei","Jéssica"]
+    var arrayDeveloper = [Developer] ()
+        
+       
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewDeveloper.delegate = self
         tableViewDeveloper.dataSource = self
+        
+        
+        arrayDeveloper.append(Developer(name: "Grazielli", email: "grazi@gmail.com", image: "developer.jpg") )
+        arrayDeveloper.append(Developer(name: "Mizia", email: "mizia@gmail.com", image: "developer.jpg") )
+        arrayDeveloper.append(Developer(name: "Gilvã", email: "gilva@gmail.com", image: "developer.jpg") )
+        arrayDeveloper.append(Developer(name: "Narlei", email: "narlei@gmail.com", image: "developer.jpg") )
+        arrayDeveloper.append(Developer(name: "Jessica", email: "jessica@gmail.com", image: "developer.jpg") )
     }
 }
+
+
 
 extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -41,10 +52,12 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellCustom", for: indexPath) as! MyCustomCell
-        cell.setup(title: arrayDeveloper[indexPath.row])
-        cell.imageView?.image = UIImage(named: "developer.png")
+        cell.setup(developer: arrayDeveloper[indexPath.row])
+        
         return cell
     }
     
     
 }
+
+

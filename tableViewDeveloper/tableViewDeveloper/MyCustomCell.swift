@@ -9,20 +9,38 @@ import UIKit
 
 class MyCustomCell: UITableViewCell {
 
-    @IBOutlet weak var Label: UILabel!
+    
+    @IBOutlet weak var imageDeveloper: UIImageView!
+    
+    @IBOutlet weak var nameDeveloper: UILabel!
+    
+    @IBOutlet weak var emailDeveloper: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        imageDeveloper!.roundedImage()
+       
     }
     
-    func setup(title: String) {
-        Label.text = title
+    func setup(developer: Developer) {
+        nameDeveloper.text = developer.name
+        emailDeveloper.text = developer.email
+        imageDeveloper.image = UIImage(named: developer.image)
+        
+        
     }
 }
+extension UIImageView {
+    func roundedImage() {
+        self.layer.cornerRadius = (self.frame.size.width) / 2;
+        self.clipsToBounds = true
+        self.layer.borderWidth = 3.0
+        self.layer.borderColor = UIColor.white.cgColor
+    }
+}
+
+
